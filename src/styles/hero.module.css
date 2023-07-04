@@ -3,17 +3,49 @@
     height: 100%;
 }
 
-.Laptop {
-    animation: slideInLeft 2s linear 0s;
+.slideLeft {
+    animation: slide-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
-@keyframes slideInLeft {
+@keyframes slide-left {
     0% {
-        transform: translateX(10px);
-        opacity: 0.1;
+        -webkit-transform: translateX(150px);
+        transform: translateX(150px);
     }
     100% {
+        -webkit-transform: translateX(0);
         transform: translateX(0);
-        opacity: 1;
+    }
+}
+
+
+.slideRight {
+    animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-right {
+    0% {
+        -webkit-transform: translateX(-150px);
+        transform: translateX(-150px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+
+.slideHuman {
+    animation: slide-human 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-human {
+    0% {
+        -webkit-transform: translateX(-350px);
+        transform: translateX(-350px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
     }
 }
