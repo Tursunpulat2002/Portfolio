@@ -1,6 +1,75 @@
-.root {
+.svgContainer {
     width: 100%;
     height: 100%;
+}
+
+.heroContainer {
+    background-color: #1a1a29;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.heroLeft > p {
+    max-width: 400px;
+}
+
+.heroRight {
+    width: 500px;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+}
+
+.buttonAboutMe {
+    background-color: #7562e0;
+    outline: 1px solid #7562e0;
+    padding: 10px 18px 10px 18px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    border: none;
+    user-select: none;
+}
+
+.buttonAboutMe:active {
+    background-color: #2b2354;
+    outline: 2px solid #7562e0;
+}
+
+.buttonResume {
+    background-color: transparent;
+    outline: 2px solid #7562e0;
+    padding: 10px 18px 10px 18px;
+    border-radius: 8px;
+    font-size: small;
+    font-weight: 600;
+    color: white;
+    border: none;
+    user-select: none;
+}
+
+.buttonResume:active {
+    background-color: #2b2354;
+    outline: 2px solid #7562e0;
 }
 
 .slideLeft {
@@ -18,7 +87,6 @@
     }
 }
 
-
 .slideRight {
     animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -34,7 +102,6 @@
     }
 }
 
-
 .slideHuman {
     animation: slide-human 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
@@ -47,5 +114,18 @@
     100% {
         -webkit-transform: translateX(0);
         transform: translateX(0);
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .heroContainer {
+        flex-direction: column-reverse;
+    }
+    .heroRight {
+        width: 90%;
+        margin: 20px;
+    }
+    .heroLeft {
+        margin: 0px;
     }
 }
