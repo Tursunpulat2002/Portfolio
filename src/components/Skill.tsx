@@ -1,17 +1,23 @@
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import styles from "../styles/skills.module.css";
 
-interface props{
-    icon: any,
-    label: string,
-    
+interface skill {
+    image: string;
+    title: string;
 }
 
-function Skill() {
-  return (
-    <div>
-
-    </div>
-  )
+interface props {
+    skill: skill;
 }
 
-export default Skill
+function Skill({ skill }: props) {
+    return (
+        <div className={styles.skillContainer}>
+            <Image height={75} width={75} src={skill.image} alt={skill.title} />
+            <p>{skill.title}</p>
+        </div>
+    );
+}
+
+export default Skill;

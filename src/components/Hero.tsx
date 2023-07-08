@@ -5,7 +5,7 @@ function Hero() {
     return (
         <div className={styles.heroContainer}>
             <div className={styles.heroLeft}>
-                <h2>Hello, i'm</h2>
+                <h2>Hello, I'm</h2>
                 <h1>Tursunpulat Orolov</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
