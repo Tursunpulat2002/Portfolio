@@ -17,6 +17,7 @@ const skillData: Array<SkillObject> = [
         category: "Languages",
         skills: [
             { image: "swift.svg", title: "Swift" },
+            { image: "objective-c.svg", title: "Objective-C" },
             { image: "kotlin.svg", title: "Kotlin" },
             { image: "javascript.svg", title: "Javascript" },
             { image: "typescript.svg", title: "Typescript" },
