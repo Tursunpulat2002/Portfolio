@@ -1,15 +1,10 @@
 import React from "react";
 import styles from "../styles/skills.module.css";
-import Skill from "./Skill";
-
-interface Skill {
-    image: string;
-    title: string;
-}
+import Skill, { skill } from "./Skill";
 
 interface SkillObject {
     category: string;
-    skills: Array<Skill>;
+    skills: Array<skill>;
 }
 
 const skillData: Array<SkillObject> = [

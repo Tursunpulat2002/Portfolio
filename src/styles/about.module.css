@@ -1,11 +1,9 @@
 .root {
     display: flex;
     flex-direction: column;
-    max-width: 1280px;
-    padding: 15px;
     margin-top: 30px;
     margin-bottom: 5px;
-    width: min(80vw, 950px);
+    /* background-color: #262641; */
 }
 
 .sectionTitle > h2 {
@@ -43,8 +41,8 @@
 }
 
 .skill {
-    width: 220px;
-    height: 220px;
+    width: 200px;
+    height: 200px;
     background-color: gray;
     display: flex;
     flex-direction: column;
@@ -65,7 +63,19 @@
 @media only screen and (max-width: 600px) {
     .root {
         justify-content: center;
-        width: 95vw;
+        width: 100%;
+        margin-top: 70px;
+    }
+    .sectionTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sectionBody {
+        font-size: small;
+    }
+    .sectionExperince > p:last-child {
+        font-size: small;
     }
     .skill {
         width: 100px;

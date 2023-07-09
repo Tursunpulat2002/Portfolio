@@ -21,3 +21,4 @@ function Skill({ skill }: props) {
 }
 
 export default Skill;
+export type {skill}

@@ -1,0 +1,17 @@
+.root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+    width: min(90vw, 980px);
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 600px) {
+    .root {
+        justify-content: center;
+        width: 95vw;
+    }
+}

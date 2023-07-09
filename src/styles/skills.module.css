@@ -1,20 +1,22 @@
 .root {
     display: flex;
     flex-direction: column;
-    max-width: 1280px;
-    padding: 15px;
-    margin-top: 30px;
-    margin-bottom: 5px;
-    width: min(85vw, 1100px);
-    gap: 35px;
-    background-color: #262641;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    gap: 75px;
+    /* background-color: #262641; */
     border-radius: 15px;
 }
 
 .categoryContainer {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
+}
+
+.categoryContainer > h2 {
+    color: #7562e0;
+    margin-bottom: 1em;
 }
 
 .skillsContainer {
@@ -37,10 +39,15 @@
 @media only screen and (max-width: 600px) {
     .root {
         justify-content: center;
-        width: 85vw;
+        width: 100%;
     }
-    .categoryContainer > h2 {
-        font-size: medium;
+    .categoryContainer {
+        display: flex;
+        align-items: center;
+    }
+    .skillsContainer {
+        align-items: center;
+        justify-content: center;
     }
     .skillContainer > img {
         width: 45px;
