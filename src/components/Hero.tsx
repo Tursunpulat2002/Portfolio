@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import styles from "../styles/hero.module.css";
+import { link } from "fs";
 
 function Hero() {
     return (
@@ -12,8 +14,13 @@ function Hero() {
                     enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
                 <div className={styles.buttons}>
-                    <button className={styles.buttonAboutMe}>About Me</button>
-                    <button className={styles.buttonResume}>Download Resume</button>
+                    <button onClick={() => {
+                        const elem = document.getElementById("projects")
+                        elem?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
+                    }} className={styles.buttonAboutMe}>Projects</button>
+                    <button onClick={() => download("/resume/Resume.pdf", "Resume.pdf")} className={styles.buttonResume}>
+                        Download Resume
+                    </button>
                 </div>
             </div>
             <div className={styles.heroRight}>
@@ -570,6 +577,18 @@ function Hero() {
             </div>
         </div>
     );
+}
+
+function download(url: string, filename: string) {
+    fetch(url)
+        .then((response) => response.blob())
+        .then((blob) => {
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = filename;
+            link.click();
+        })
+        .catch(console.error);
 }
 
 export default Hero;

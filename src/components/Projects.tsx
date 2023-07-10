@@ -76,7 +76,7 @@ const projects: Array<project> = [
 function Projects() {
     return (
         <div className={styles.root}>
-            <h2>Projects</h2>
+            <h2 id="projects">Projects</h2>
             <div className={styles.projectsContainer}>
                 {projects.map((project, i) => {
                     return (
