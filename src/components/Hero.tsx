@@ -10,14 +10,19 @@ function Hero() {
                 <h2>Hello, I'm</h2>
                 <h1>Tursunpulat Orolov</h1>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    I'm a driven and creative software developer specializing in iOS development, with a focus on crafting intuitive user experiences
+                    and integrating cutting-edge technologies.
                 </p>
                 <div className={styles.buttons}>
-                    <button onClick={() => {
-                        const elem = document.getElementById("projects")
-                        elem?.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"})
-                    }} className={styles.buttonAboutMe}>Projects</button>
+                    <button
+                        onClick={() => {
+                            const elem = document.getElementById("projects");
+                            elem?.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+                        }}
+                        className={styles.buttonAboutMe}
+                    >
+                        Projects
+                    </button>
                     <button onClick={() => download("/resume/Resume.pdf", "Resume.pdf")} className={styles.buttonResume}>
                         Download Resume
                     </button>

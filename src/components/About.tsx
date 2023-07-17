@@ -10,17 +10,18 @@ function About() {
             </div>
             <div className={styles.sectionBody}>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit
-                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    I am a dedicated software developer with a strong foundation in iOS development. Through academic coursework and hands-on
+                    projects, I have honed my skills in creating user-friendly applications, integrating external APIs seamlessly, and adhering to
+                    industry best practices. With a collaborative mindset and a drive for continuous learning, I am committed to delivering impactful
+                    solutions that enhance user experiences while upholding high-quality standards in collaborative team environments.
                 </p>
             </div>
             <div className={styles.sectionExperince}>
                 <p>5+</p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    With a commitment to delivering high-quality code and adhering to industry best practices, I have thrived in collaborative team
+                    environments, fostering a positive and inclusive work culture. Throughout my journey, I gained invaluable experience in
+                    Mobile development, successfully completing hands-on projects that involved creating interactive apps by leveraging external APIs.
                 </p>
             </div>
             <div className={styles.skills}>
