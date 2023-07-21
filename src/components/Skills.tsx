@@ -31,7 +31,7 @@ const skillData: Array<SkillObject> = [
             { image: "uikit.svg", title: "UIKit" },
             { image: "webkit.svg", title: "WebKit" },
             { image: "nextjs.svg", title: "Next.js" },
-            { image: "react.svg", title: "React" },
+            { image: "react.svg", title: "React/React Native" },
             { image: "bootstrap.svg", title: "Bootstrap" },
             { image: "tailwindcss.svg", title: "Tailwind" },
             { image: "flask.svg", title: "Flask" },
